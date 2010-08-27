@@ -1,0 +1,28 @@
+<h1>Listing results</h1>
+
+<table>
+  <tr>
+    <th>Question id</th>
+    <th>Enrollment id</th>
+    <th>Stime</th>
+    <th>Etime</th>
+    <th>Score</th>
+  </tr>
+
+<% @results.each do |result| %>
+  <tr>
+    <td><%=h result.question_ID %></td>
+    <td><%=h result.enrollment_ID %></td>
+    <td><%=h result.stime %></td>
+    <td><%=h result.etime %></td>
+    <td><%=h result.score %></td>
+    <td><%= link_to 'Show', result %></td>
+    <td><%= link_to 'Edit', edit_result_path(result) %></td>
+    <td><%= link_to 'Destroy', result, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New result', new_result_path %>

@@ -1,0 +1,20 @@
+<h1>Editing enrollment</h1>
+
+<% form_for(@enrollment) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_ID %><br />
+    <%= f.text_field :user_ID %>
+  </p>
+  <p>
+    <%= f.label :course_ID %><br />
+    <%= f.text_field :course_ID %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @enrollment %> |
+<%= link_to 'Back', enrollments_path %>

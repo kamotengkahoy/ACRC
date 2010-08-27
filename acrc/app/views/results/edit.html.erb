@@ -1,0 +1,32 @@
+<h1>Editing result</h1>
+
+<% form_for(@result) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :question_ID %><br />
+    <%= f.text_field :question_ID %>
+  </p>
+  <p>
+    <%= f.label :enrollment_ID %><br />
+    <%= f.text_field :enrollment_ID %>
+  </p>
+  <p>
+    <%= f.label :stime %><br />
+    <%= f.datetime_select :stime %>
+  </p>
+  <p>
+    <%= f.label :etime %><br />
+    <%= f.datetime_select :etime %>
+  </p>
+  <p>
+    <%= f.label :score %><br />
+    <%= f.text_field :score %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @result %> |
+<%= link_to 'Back', results_path %>

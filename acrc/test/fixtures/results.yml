@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  question_ID: 
+  enrollment_ID: 
+  stime: 2010-08-26 08:27:34
+  etime: 2010-08-26 08:27:34
+  score: 
+
+two:
+  question_ID: 
+  enrollment_ID: 
+  stime: 2010-08-26 08:27:34
+  etime: 2010-08-26 08:27:34
+  score: 

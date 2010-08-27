@@ -1,0 +1,36 @@
+<h1>Editing quiz</h1>
+
+<% form_for(@quiz) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :course_ID %><br />
+    <%= f.text_field :course_ID %>
+  </p>
+  <p>
+    <%= f.label :quizname %><br />
+    <%= f.text_field :quizname %>
+  </p>
+  <p>
+    <%= f.label :quiztype %><br />
+    <%= f.text_field :quiztype %>
+  </p>
+  <p>
+    <%= f.label :datepublished %><br />
+    <%= f.datetime_select :datepublished %>
+  </p>
+  <p>
+    <%= f.label :stime %><br />
+    <%= f.datetime_select :stime %>
+  </p>
+  <p>
+    <%= f.label :etime %><br />
+    <%= f.datetime_select :etime %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @quiz %> |
+<%= link_to 'Back', quizzes_path %>

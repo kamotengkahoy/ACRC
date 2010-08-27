@@ -1,0 +1,13 @@
+<p>
+  <b>User id:</b>
+  <%=h @enrollment.user_ID %>
+</p>
+
+<p>
+  <b>Course id:</b>
+  <%=h @enrollment.course_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_enrollment_path(@enrollment) %> |
+<%= link_to 'Back', enrollments_path %>

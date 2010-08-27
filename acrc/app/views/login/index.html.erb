@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to ACRC</title>
+<style type="text/css">
+    body{ background-color:#FFFFFF;}
+        table {border: none; border-collapse: collapse; border-spacing: 0; width:100%}
+    td, th {padding: 0;}  
+.style4 {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-size: xx-small;
+}
+.style5 {font-size: x-small}
+.style6 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+a {
+text-decoration: none;
+}
+a:link {
+COLOR: #FFFFFF;
+}
+a:visited {
+COLOR: #FFFFFF;
+}
+a:hover {
+COLOR: #FF0000;
+}
+a:active {
+COLOR: #FFFFFF;
+}
+
+.style12 {
+  color: #142628
+}
+.style13 {
+  color: #333333;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.style15 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+.style16 {
+  color: #000033;
+  font-weight: bold;
+}
+.style17 {font-size: x-small; font-family: Verdana, Arial, Helvetica, sans-serif;}
+</style>
+</head>
+<body>
+<table height=204px>
+  <tr>
+    <td height=204px background="IMG/header.jpg"><img src="IMG/logo.png" width="426" height="127" /></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td height=54px background="IMG/header2.jpg">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+<table height=400px background="IMG/background.jpg">
+  <tr>
+    <td width="37%" rowspan="4">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+    <td width="37%" rowspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="46" align="center" valign="middle"><h3><strong><span class="style13">Welcome to ACRC</span></strong></h3>
+      <p>&nbsp; </p></td>
+  </tr>
+  <tr>
+    <td align="left"><% if flash[:notice] %>
+      <span style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;"><%= flash[:notice] %></span>
+      <% end %>
+      <%= form_tag :action=>'authenticate' %>
+      <table border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+<tr>
+<form name="form1" method="post" action="checklogin.php">
+<td bgcolor="#FFFFFF">
+<table width="88%" bgcolor="#FFFFFF">
+<tr>
+<td align="center" ><h5><strong class="style5 style6 style12">Member Login </strong></h5></td>
+</tr>
+
+<tr>
+<td width="151" align="center"><span class="style15">Username:</span></td>
+<td width="142" align="center"><%= text_field("userform", "username",:size=>"20" ) %></td>
+</tr>
+<tr>
+  <td width="151" align="center">&nbsp;</td>
+  <td align="center">&nbsp;</td>
+</tr>
+<tr>
+<td align="center"><span class="style15">Password:</span></td>
+<td align="center"><%= password_field("userform", "password",:size=>"20" )
+%></td>
+</tr>
+<tr>
+<td height="46" colspan="2" align="center" valign="bottom"><input type="submit" value=" LOGIN " /></td>
+</tr>
+</table></td>
+</form>
+</tr>
+</table>
+      <span class="style16"> <span class="style17">Forgot your password?</span></span>
+      <div style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;"></div>
+<!--creates form, exectues the authenticate method when the submit button is clicked--></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table >
+  <tr>
+    <td height=36px align="center" valign="middle" background="IMG/footer.jpg"> <h5 class="style4 style5">Copyright 2010 ACRC, All Rights Reserved </h5></td>
+  </tr>
+</table>
+
+</body>
+</html>

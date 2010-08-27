@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  coursename: MyString
+  section: MyString
+  user_ID: 
+
+two:
+  coursename: MyString
+  section: MyString
+  user_ID: 

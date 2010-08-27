@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  quiz_ID: 
+  questionname: MyString
+  answer: MyString
+  weight: 
+
+two:
+  quiz_ID: 
+  questionname: MyString
+  answer: MyString
+  weight: 

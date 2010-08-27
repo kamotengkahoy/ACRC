@@ -1,0 +1,28 @@
+<p>
+  <b>Question id:</b>
+  <%=h @result.question_ID %>
+</p>
+
+<p>
+  <b>Enrollment id:</b>
+  <%=h @result.enrollment_ID %>
+</p>
+
+<p>
+  <b>Stime:</b>
+  <%=h @result.stime %>
+</p>
+
+<p>
+  <b>Etime:</b>
+  <%=h @result.etime %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%=h @result.score %>
+</p>
+
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

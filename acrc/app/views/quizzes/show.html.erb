@@ -1,0 +1,33 @@
+<p>
+  <b>Course id:</b>
+  <%=h @quiz.course_ID %>
+</p>
+
+<p>
+  <b>Quizname:</b>
+  <%=h @quiz.quizname %>
+</p>
+
+<p>
+  <b>Quiztype:</b>
+  <%=h @quiz.quiztype %>
+</p>
+
+<p>
+  <b>Datepublished:</b>
+  <%=h @quiz.datepublished %>
+</p>
+
+<p>
+  <b>Stime:</b>
+  <%=h @quiz.stime %>
+</p>
+
+<p>
+  <b>Etime:</b>
+  <%=h @quiz.etime %>
+</p>
+
+
+<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
+<%= link_to 'Back', quizzes_path %>
